@@ -109,18 +109,18 @@ LDAP server flaw research (Red Hat) and web-application vulnerability disclosure
 
 ---
 
-## 🌐 Current Roles
+## 🌐 Roles & Affiliations
 
-| Role | Org | Since |
-|---|---|---|
-| Information Security Specialist | **StraightArc Technologies** | 2020 |
-| Board Member | **SkyVirt** | 2017 |
-| Senior Subject Matter Expert | **TCS iON** | 2022 |
-| Board of Studies | **Ramachandra College of Engineering** | 2023 |
-| CHFI Item Writer | **EC-Council** | 2016 |
-| Technical Committee | **Digital 4n6 Journal** | 2016 |
-| Team Member | **National Cyber Defence Research Centre** | 2016 |
-| Director | **ARNE Solutions** | 2016 |
+  | Role | Org | Period |
+  |---|---|---|
+  | Information Security Specialist | **StraightArc Technologies** | 2020 to present |
+  | Board Member | **SkyVirt** | 2017 to present |
+  | Senior Subject Matter Expert | **TCS iON** | 2022 to present |
+  | Board of Studies | **Ramachandra College of Engineering** | 2023 to present |
+  | CHFI Item Writer | **EC-Council** | 2016 to present |
+  | Director | **ARNE Solutions** | 2016 to present |
+  | Technical Committee | **Digital 4n6 Journal** | 2016 to 2018 |
+  | Team Member | **National Cyber Defence Research Centre** | 2016 to 2018 |
 
 ---
 
