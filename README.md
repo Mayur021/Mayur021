@@ -1,91 +1,141 @@
-# Mayur Agnihotri
+<div align="center">
 
-  **Head of Threat Research** | Agentic AI Security and Decision-Rights | OWASP AISVS Contributor
+![Mayur Agnihotri — Agentic AI Security and Decision-Rights](banner.png)
 
-  Information Security Specialist at StraightArc Technologies. Board Member at SkyVirt. 12+ years across AI security, SOC detection and response,
-  OT/ICS, cyber-range design, cyber-crime investigation, and application security.
+[![OWASP](https://img.shields.io/badge/OWASP-AISVS%20Contributor-1d4ed8?style=flat-square&logo=owasp&logoColor=white)](https://github.com/OWASP/AISVS)
+[![Standards](https://img.shields.io/badge/Standards--Track-Active-f59e0b?style=flat-square)](https://github.com/Mayur021/writings)
+[![License](https://img.shields.io/badge/Content-CC--BY--4.0-10b981?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+[![Experience](https://img.shields.io/badge/Experience-12%2B%20Years-64748b?style=flat-square)]()
+[![Lane](https://img.shields.io/badge/Lane-Vendor%20Neutral-4dd0e1?style=flat-square)]()
 
-  ---
+**Head of Threat Research** · Agentic AI Security & Decision-Rights · AI SOC + OT/ICS · SecOps · Board Member
 
-  ## Focus
+</div>
 
-  My focus is the security of agentic AI. As autonomous agents start taking real actions in production, the question is no longer only who an agent
-  is, but how much it is allowed to do on its own. I work on decision-rights and reversibility-graded authority: matching an agent's autonomy to
-  whether its actions can be undone.
+---
 
-  The architectural cut: investigation is reversible (read), actuation is not (write). The standards-side answer specifies the gate for the write
-  side. Manifest-declared action class, deterministic gate, worst-case multi-step chain rule.
+## 🎯 Focus
 
-  ---
+Working on the architectural floor for AI agents that take irreversible actions. The thesis in one line: **investigation is reversible, actuation is not — and the gate for the write side has to be code the agent cannot reach, evaluating a manifest the agent cannot rewrite.**
 
-  ## Standards-track contributions
+Three primitives carry the architecture:
 
-  - **OWASP AISVS**: Contributor. C9.2.6 (manifest-declared action class) and C9.2.7 (worst-case chain rule) merged into the C09 research chapter,
-  proposed for v1.01.
-  - **OWASP SPVS**: Active work. [Issue #13](https://github.com/OWASP/www-project-spvs/issues/13), [PR
-  #14](https://github.com/OWASP/www-project-spvs/pull/14) (V5.6.5 IR decision-rights), [PR #15](https://github.com/OWASP/www-project-spvs/pull/15)
-  (V1.3.7 NHI runtime decision-rights).
-  - **OWASP Cornucopia (Agentic AI Cards)**: Active work on action-authority taxonomy. [Issue
-  #3018](https://github.com/OWASP/www-project-cornucopia/issues/3018).
-  - **OWASP GenAI Security Project (Agentic AI Threats & Mitigations v1.1)**: Active work on reversibility-graded authority. [Issue
-  #13](https://github.com/GenAI-Security-Project/GenAI-Agent-Security-Initiative/issues/13).
-  - **CSA NHI v1.0**: Reviewer (peer review June 2026).
+```
+manifest.action_class    = "irreversible"   // declared upstream by publisher
+deterministic.gate       = outside_loop      // code the agent cannot reach
+worst_case.chain_rule    = governs_chain     // composed actions inherit the worst class
+```
 
-  ## Prior OWASP leadership
+Twelve-plus years across threat research, AI-driven SOC detection and response, OT/ICS security, cyber-range exercise design, cyber-crime investigation, and web/mobile/application security.
 
-  - **OWASP AppSec India**: Co-Leader (2016 to 2020)
-  - **OWASP Indore**: Chapter Leader (2017 to 2018)
+---
 
-  ---
+## 🛡 Standards-Track Contributions
 
-  ## Current roles
+| Project | Status | Scope |
+|---|---|---|
+| **OWASP AISVS** | ![Contributor](https://img.shields.io/badge/-Contributor-10b981?style=flat-square) | C9.2.6 (manifest-declared action class) + C9.2.7 (worst-case chain rule) merged into C09 research chapter, proposed for v1.01 |
+| **OWASP SPVS** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | V5.6.5 IR decision-rights ([PR #14](https://github.com/OWASP/www-project-spvs/pull/14)), V1.3.7 NHI runtime decision-rights ([PR #15](https://github.com/OWASP/www-project-spvs/pull/15)), supply-chain ([Issue #13](https://github.com/OWASP/www-project-spvs/issues/13)) |
+| **OWASP Cornucopia (Agentic AI)** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Action-authority taxonomy ([Issue #3018](https://github.com/OWASP/www-project-cornucopia/issues/3018)) |
+| **OWASP GenAI Security Project** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Reversibility-graded authority into Agentic AI Threats & Mitigations v1.1 ([Issue #13](https://github.com/GenAI-Security-Project/GenAI-Agent-Security-Initiative/issues/13)) |
+| **CSA NHI v1.0** | ![Reviewer](https://img.shields.io/badge/-Reviewer-4dd0e1?style=flat-square) | Peer review June 2026 |
 
-  - **StraightArc Technologies**: Information Security Specialist (2020 to present)
-  - **SkyVirt**: Board Member (2017 to present)
-  - **TCS iON**: Senior Subject Matter Expert (2022 to present)
-  - **Ramachandra College of Engineering (RCEE)**: Board of Studies (2023 to present)
-  - **EC-Council**: CHFI Item Writer (2016 to present)
-  - **Digital 4n6 Journal**: Technical Committee (2016 to present)
-  - **National Cyber Defence Research Centre**: Team Member (2016 to present)
-  - **ARNE Solutions**: Director (2016 to present)
+**Prior OWASP leadership**: AppSec India Co-Leader (2016–2020) · OWASP Indore Chapter Leader (2017–2018)
 
-  ---
+---
 
-  ## Selected publications
+## ⚙️ Reference Implementations
 
-  - *Interview with Mayur Agnihotri* (Science Of Cyber Security, October 2017)
-  - *Conviction Of Digital Crime* (National Cyber Defence eMagazine, August 2016)
-  - *PenTest: Penetration Testing in Linux* (PenTest Magazine, March 2016)
-  - *PowerShell For Penetration Testing* (PenTest Magazine, January 2016)
-  - *Predictions For Cyber Security in 2016* (eForensics and Hakin9 Magazines, December 2015)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-  ## Responsible disclosure recognition
+### 🔒 [aisvs-action-class-reference](https://github.com/Mayur021/aisvs-action-class-reference)
 
-  Listed on the security acknowledgments of:
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JSON Schema](https://img.shields.io/badge/-JSON%20Schema-grey?style=flat-square)
+![CC BY 4.0](https://img.shields.io/badge/-CC%20BY%204.0-green?style=flat-square)
 
-  - **Red Hat** (December 2023): LDAP server flaws
-  - **Adobe Product Security Incident Response Team** (March 2016)
-  - **BlackBerry SIRT** (December 2014)
-  - **Sony** (November 2014)
-  - **Microweber** (August 2014)
-  - **Nokia** (August 2014)
-  - **Siteground** (August 2014)
+Reference implementation of **OWASP AISVS C9.2.6 + C9.2.7**: manifest-declared action class, deterministic gate, worst-case chain rule. JSON schema + Python.
 
-  ---
+</td>
+<td width="50%" valign="top">
 
-  ## Writings
+### 🆔 [nhi-runtime-decision-rights](https://github.com/Mayur021/nhi-runtime-decision-rights)
 
-  Long-form work on AI agent security architecture lives in [`writings/`](https://github.com/Mayur021/writings) (coming after the canonical short
-  version publishes elsewhere).
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SPIFFE](https://img.shields.io/badge/-SPIFFE-grey?style=flat-square)
+![CC BY 4.0](https://img.shields.io/badge/-CC%20BY%204.0-green?style=flat-square)
 
-  ## Connect
+NHI runtime decision-rights companion to **OWASP SPVS V1.3.7**. Identity provenance verification, token freshness, action-class authorization.
 
-  - LinkedIn: [linkedin.com/in/mayuragnihotri](https://www.linkedin.com/in/mayuragnihotri/)
-  - Twitter/X: [@I_AM_Mayur0021](https://x.com/I_AM_Mayur0021)
-  - StraightArc: [straightarc.com](https://straightarc.com)
-  - Location: Udaipur, India (GMT+5:30)
+</td>
+</tr>
+</table>
 
-  ---
+---
 
-  *Vendor-neutral standards work. Decision-rights for AI agents, reversibility as the architectural floor, manifest-declared action class as the
-  standards-side answer.*
+## 📜 Writings
+
+[![Writings](https://img.shields.io/badge/Repository-Mayur021%2Fwritings-1d4ed8?style=flat-square&logo=github&logoColor=white)](https://github.com/Mayur021/writings)
+
+Long-form essays on AI agent security, decision-rights, reversibility-graded authority, and contribution methodology. Three essays published June 2026 (~9,900 words + 7 figures):
+
+- **[The Decision-Rights Plane: An Architectural Gap in AI Security](https://github.com/Mayur021/writings/tree/main/2026-06-02-decision-rights-plane)** — the missing primitive at layers 4 and 5
+- **[Investigation Is Reversible. Actuation Is Not.](https://github.com/Mayur021/writings/tree/main/2026-06-02-investigation-vs-actuation)** — the read/write architectural fold as design primitive
+- **[What I Learned Contributing Across Five Standards Surfaces](https://github.com/Mayur021/writings/tree/main/2026-06-02-contributing-across-standards-surfaces)** — the cross-surface contributor method
+
+### Magazine Publications
+
+- *Interview with Mayur Agnihotri* — Science Of Cyber Security (Oct 2017)
+- *Conviction Of Digital Crime* — National Cyber Defence eMagazine (Aug 2016)
+- *PenTest: Penetration Testing in Linux* — PenTest Magazine (Mar 2016)
+- *PowerShell For Penetration Testing* — PenTest Magazine (Jan 2016)
+- *Predictions For Cyber Security in 2016* — eForensics and Hakin9 (Dec 2015)
+
+---
+
+## 🏆 Responsible Disclosure Recognition
+
+![Red Hat](https://img.shields.io/badge/Red%20Hat-Dec%202023-EE0000?style=flat-square&logo=redhat&logoColor=white)
+![Adobe](https://img.shields.io/badge/Adobe%20PSIRT-Mar%202016-FF0000?style=flat-square&logo=adobe&logoColor=white)
+![BlackBerry](https://img.shields.io/badge/BlackBerry%20SIRT-Dec%202014-000000?style=flat-square&logo=blackberry&logoColor=white)
+![Sony](https://img.shields.io/badge/Sony-Nov%202014-000000?style=flat-square&logo=sony&logoColor=white)
+![Microweber](https://img.shields.io/badge/Microweber-Aug%202014-4F46E5?style=flat-square)
+![Nokia](https://img.shields.io/badge/Nokia-Aug%202014-124191?style=flat-square&logo=nokia&logoColor=white)
+![Siteground](https://img.shields.io/badge/Siteground-Aug%202014-FF7300?style=flat-square)
+
+LDAP server flaw research (Red Hat) and web-application vulnerability disclosures across major brands.
+
+---
+
+## 🌐 Current Roles
+
+| Role | Org | Since |
+|---|---|---|
+| Information Security Specialist | **StraightArc Technologies** | 2020 |
+| Board Member | **SkyVirt** | 2017 |
+| Senior Subject Matter Expert | **TCS iON** | 2022 |
+| Board of Studies | **Ramachandra College of Engineering** | 2023 |
+| CHFI Item Writer | **EC-Council** | 2016 |
+| Technical Committee | **Digital 4n6 Journal** | 2016 |
+| Team Member | **National Cyber Defence Research Centre** | 2016 |
+| Director | **ARNE Solutions** | 2016 |
+
+---
+
+## 🤝 Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mayuragnihotri-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayuragnihotri/)
+[![Twitter](https://img.shields.io/badge/X-@I__AM__Mayur0021-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/I_AM_Mayur0021)
+[![Website](https://img.shields.io/badge/StraightArc-straightarc.com-4dd0e1?style=for-the-badge)](https://straightarc.com)
+
+📍 Udaipur, India · ⏱ GMT+05:30
+
+---
+
+<div align="center">
+
+*Vendor-neutral standards work. Decision-rights for AI agents, reversibility as the architectural floor, manifest-declared action class as the standards-side answer.*
+
+</div>
