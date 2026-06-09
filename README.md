@@ -74,7 +74,20 @@ NHI runtime decision-rights companion to **OWASP SPVS V1.3.7**. Identity provena
 </table>
 
 ---
+## 📄 Whitepaper
 
+  [![Whitepaper](https://img.shields.io/badge/Whitepaper-v1.0%20%E2%80%94%20Action--Class%20Authority-1d4ed8?style=flat-square&logo=github&logoColor=white)](https://github.com/Mayur021/action-class-authority)
+  [![Pages](https://img.shields.io/badge/Length-~28%20pages-64748b?style=flat-square)]()
+  [![Chapters](https://img.shields.io/badge/Chapters-18-64748b?style=flat-square)]()
+  [![License](https://img.shields.io/badge/-CC%20BY%204.0-10b981?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+
+  ### [Action-Class Authority for AI Agents: A Verification-Side Reference](https://github.com/Mayur021/action-class-authority)
+
+  The full architectural reference. 18 chapters across 5 parts (Problem / Architecture / Standards Anchor / Applied Patterns / Implementation) + closing. Develops the four-class reversibility taxonomy (read-only / reversible / external-reversible / irreversible), manifest-declared classification, worst-case chain rule, and the architectural floor that makes the gate resistant to prompt injection. Anchored in **OWASP AISVS C9.2.6 + C9.2.7** (proposed for 1.01, merged into AISVS main 2026-05-27).
+
+  **Cross-substrate convergence catalog (10 substrates):** OWASP AISVS · CSA IAM WG · PieterKas/agent2agent-auth-framework · SANS AI Security Maturity Model · CSA AARM · Identient AuthR · Digital Identity Forum · CSA NHI · James A Bex AI Engineering Handbook · Riddhi Mohan Sharma EHV.
+
+  ---
 ## 📜 Writings
 
 [![Writings](https://img.shields.io/badge/Repository-Mayur021%2Fwritings-1d4ed8?style=flat-square&logo=github&logoColor=white)](https://github.com/Mayur021/writings)
