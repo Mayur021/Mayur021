@@ -34,7 +34,7 @@ Twelve-plus years across threat research, AI-driven SOC detection and response, 
 
 | Project | Status | Scope |
 |---|---|---|
-| **OWASP AISVS** | ![Contributor](https://img.shields.io/badge/-Contributor-10b981?style=flat-square) | C9.2.6 (manifest-declared action class) + C9.2.7 (worst-case chain rule) merged into C09 research chapter, proposed for v1.01 |
+| **OWASP AISVS** | ![Contributor](https://img.shields.io/badge/-Contributor-10b981?style=flat-square) | Reversibility-graded action controls in C09 v1.0: C9.2.3 (reversibility classification), C9.2.4 (enforce by class), C9.2.10 (worst-case reachable across chains) |
 | **OWASP SPVS** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | V5.6.5 IR decision-rights ([PR #14](https://github.com/OWASP/www-project-spvs/pull/14)), V1.3.7 NHI runtime decision-rights ([PR #15](https://github.com/OWASP/www-project-spvs/pull/15)), supply-chain ([Issue #13](https://github.com/OWASP/www-project-spvs/issues/13)) |
 | **OWASP Cornucopia (Agentic AI)** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Action-authority taxonomy ([Issue #3018](https://github.com/OWASP/www-project-cornucopia/issues/3018)) |
 | **OWASP GenAI Security Project** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Reversibility-graded authority into Agentic AI Threats & Mitigations v1.1 ([Issue #13](https://github.com/GenAI-Security-Project/GenAI-Agent-Security-Initiative/issues/13)) |
@@ -59,7 +59,7 @@ Twelve-plus years across threat research, AI-driven SOC detection and response, 
 ![JSON Schema](https://img.shields.io/badge/-JSON%20Schema-grey?style=flat-square)
 ![CC BY 4.0](https://img.shields.io/badge/-CC%20BY%204.0-green?style=flat-square)
 
-Reference implementation of **OWASP AISVS C9.2.6 + C9.2.7**: manifest-declared action class, deterministic gate, worst-case chain rule. JSON schema + Python.
+Reference implementation of **OWASP AISVS C9.2.3 / C9.2.4 / C9.2.10**: reversibility classification, enforce-by-class gate, worst-case reachable across chains. JSON schema + Python.
 
 </td>
 <td width="50%" valign="top">
@@ -86,7 +86,7 @@ NHI runtime decision-rights companion to **OWASP SPVS V1.3.7**. Identity provena
 
   ### [Action-Class Authority for AI Agents: A Verification-Side Reference](https://github.com/Mayur021/action-class-authority)
 
-  The full architectural reference. 18 chapters across 5 parts (Problem / Architecture / Standards Anchor / Applied Patterns / Implementation) + closing. Develops the four-class reversibility taxonomy (read-only / reversible / external-reversible / irreversible), manifest-declared classification, worst-case chain rule, and the architectural floor that makes the gate resistant to prompt injection. Anchored in **OWASP AISVS C9.2.6 + C9.2.7** (proposed for 1.01, merged into AISVS main 2026-05-27).
+  The full architectural reference. 18 chapters across 5 parts (Problem / Architecture / Standards Anchor / Applied Patterns / Implementation) + closing. Develops the four-class reversibility taxonomy (read-only / reversible / external-reversible / irreversible), manifest-declared classification, worst-case chain rule, and the architectural floor that makes the gate resistant to prompt injection. Anchored in **OWASP AISVS C9.2.3 / C9.2.4 / C9.2.10** (reversibility classification, enforce-by-class, and worst-case reachable across chains; AISVS v1.0).
 
   **Cross-substrate convergence catalog (10 substrates):** OWASP AISVS · CSA IAM WG · PieterKas/agent2agent-auth-framework · SANS AI Security Maturity Model · CSA AARM · Identient AuthR · Digital Identity Forum · CSA NHI · James A Bex AI Engineering Handbook · Riddhi Mohan Sharma EHV.
 
