@@ -38,6 +38,9 @@ Twelve-plus years across threat research, AI-driven SOC detection and response, 
 | **OWASP SPVS** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | V5.6.5 IR decision-rights ([PR #14](https://github.com/OWASP/www-project-spvs/pull/14)), V1.3.7 NHI runtime decision-rights ([PR #15](https://github.com/OWASP/www-project-spvs/pull/15)), supply-chain ([Issue #13](https://github.com/OWASP/www-project-spvs/issues/13)) |
 | **OWASP Cornucopia (Agentic AI)** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Action-authority taxonomy ([Issue #3018](https://github.com/OWASP/www-project-cornucopia/issues/3018)) |
 | **OWASP GenAI Security Project** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Reversibility-graded authority into Agentic AI Threats & Mitigations v1.1 ([Issue #13](https://github.com/GenAI-Security-Project/GenAI-Agent-Security-Initiative/issues/13)) |
+| **OWASP Agentic Skills Top 10 (AST09)** | ![Contributor](https://img.shields.io/badge/-Contributor-10b981?style=flat-square) | Cross-execution chain linkage (`parent_action_ref` + fan-in) accepted into the AST09 execution-receipt proposal ([Issue #44](https://github.com/OWASP/www-project-agentic-skills-top-10/issues/44)) |
+| **Creduent** (open agent identity standard) | ![Merged](https://img.shields.io/badge/-Merged-10b981?style=flat-square) | Reversibility classification in the signed Execution Receipt schema: design-time conformance gate plus runtime fail-closed on unclassified tools, anchored to AISVS C9.2.3 ([PR #8](https://github.com/Idevsec/creduent/pull/8)) |
+| **Agent Evidence Levels (AEL)** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Governability extension: reversibility-class provenance on evidence records, fail-closed on unclassified or unverifiable policy ([PR #2](https://github.com/luckyPipewrench/agent-evidence-levels/pull/2)) |
 | **CSA NHI v1.0** | ![Reviewer](https://img.shields.io/badge/-Reviewer-4dd0e1?style=flat-square) | Peer review June 2026 |
 
 **Prior OWASP leadership**: AppSec India Co-Leader (2016–2020) · OWASP Indore Chapter Leader (2017–2018)
@@ -100,6 +103,7 @@ Long-form essays on AI agent security, decision-rights, reversibility-graded aut
 
 ### Magazine Publications
 
+- *Action-Class Authority When AI Agents Do the Triage* — eForensics Magazine, *AI in Forensics: The Age of Autonomy* (Jun 2026)
 - *Interview with Mayur Agnihotri* — Science Of Cyber Security (Oct 2017)
 - *Conviction Of Digital Crime* — National Cyber Defence eMagazine (Aug 2016)
 - *PenTest: Penetration Testing in Linux* — PenTest Magazine (Mar 2016)
@@ -127,6 +131,7 @@ LDAP server flaw research (Red Hat) and web-application vulnerability disclosure
   | Role | Org | Period |
   |---|---|---|
   | Information Security Specialist | **StraightArc Technologies** | 2020 to present |
+  | Head of Threat Research | **SkyVirtRange** · **SecSphere SOC** | 2017 to present |
   | Board Member | **SkyVirt** | 2017 to present |
   | Senior Subject Matter Expert | **TCS iON** | 2022 to present |
   | Board of Studies | **Ramachandra College of Engineering** | 2023 to present |
