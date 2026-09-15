@@ -130,8 +130,9 @@ LDAP server flaw research (Red Hat) and web-application vulnerability disclosure
 
   | Role | Org | Period |
   |---|---|---|
+  | Head of Threat Research | **StraightArc Technologies** | 2026 to present |
   | Information Security Specialist | **StraightArc Technologies** | 2020 to present |
-  | Head of Threat Research | **SkyVirtRange** · **SecSphere SOC** | 2017 to present |
+  | Head of Threat Research | **SecSphere SOC** | 2020 to present |
   | Board Member | **SkyVirt** | 2017 to present |
   | Senior Subject Matter Expert | **TCS iON** | 2022 to present |
   | Board of Studies | **Ramachandra College of Engineering** | 2023 to present |
