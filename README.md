@@ -34,7 +34,7 @@ Twelve-plus years across threat research, AI-driven SOC detection and response, 
 
 | Project | Status | Scope |
 |---|---|---|
-| **OWASP AISVS** | ![Contributor](https://img.shields.io/badge/-Contributor-10b981?style=flat-square) | Reversibility-graded action controls in C09 v1.0: C9.2.3 (reversibility classification), C9.2.4 (enforce by class), C9.2.10 (worst-case reachable across chains) |
+| **OWASP AISVS** | ![Named in v1.0](https://img.shields.io/badge/-Named%20in%20v1.0-10b981?style=flat-square) | Named in the published v1.0 contributor list. Reversibility-graded action controls in C09: C9.2.3 (reversibility classification), C9.2.4 (enforce by class), C9.2.10 (worst-case reachable across chains) |
 | **OWASP SPVS** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | V5.6.5 IR decision-rights ([PR #14](https://github.com/OWASP/www-project-spvs/pull/14)), V1.3.7 NHI runtime decision-rights ([PR #15](https://github.com/OWASP/www-project-spvs/pull/15)), supply-chain ([Issue #13](https://github.com/OWASP/www-project-spvs/issues/13)) |
 | **OWASP Cornucopia (Agentic AI)** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Action-authority taxonomy ([Issue #3018](https://github.com/OWASP/www-project-cornucopia/issues/3018)) |
 | **OWASP GenAI Security Project** | ![Active](https://img.shields.io/badge/-Active%20Work-f59e0b?style=flat-square) | Reversibility-graded authority into Agentic AI Threats & Mitigations v1.1 ([Issue #13](https://github.com/GenAI-Security-Project/GenAI-Agent-Security-Initiative/issues/13)) |
@@ -53,6 +53,17 @@ Twelve-plus years across threat research, AI-driven SOC detection and response, 
 <tr>
 <td width="50%" valign="top">
 
+### ✅ [aisvs-c9-action-class-conformance](https://github.com/Mayur021/aisvs-c9-action-class-conformance)
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Apache 2.0](https://img.shields.io/badge/-Apache%202.0-green?style=flat-square)
+![70 tests](https://img.shields.io/badge/-70%20tests-10b981?style=flat-square)
+
+Independent, vendor-neutral conformance scenarios for the action-class and reversibility controls in **OWASP AISVS C09**. Real-data fixtures generated from a published MCP registry corpus, three binding states in the record against two outcomes at the gate, and a supersession event channel so an implementation cannot pass every scenario while emitting nothing. Cited as the executable form of the argument in [10.5281/zenodo.22649163](https://doi.org/10.5281/zenodo.22649163).
+
+</td>
+<td width="50%" valign="top">
+
 ### 🔒 [aisvs-action-class-reference](https://github.com/Mayur021/aisvs-action-class-reference)
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -62,6 +73,8 @@ Twelve-plus years across threat research, AI-driven SOC detection and response, 
 Reference implementation of **OWASP AISVS C9.2.3 / C9.2.4 / C9.2.10**: reversibility classification, enforce-by-class gate, worst-case reachable across chains. JSON schema + Python.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🆔 [nhi-runtime-decision-rights](https://github.com/Mayur021/nhi-runtime-decision-rights)
@@ -71,6 +84,16 @@ Reference implementation of **OWASP AISVS C9.2.3 / C9.2.4 / C9.2.10**: reversibi
 ![CC BY 4.0](https://img.shields.io/badge/-CC%20BY%204.0-green?style=flat-square)
 
 NHI runtime decision-rights companion to **OWASP SPVS V1.3.7**. Identity provenance verification, token freshness, action-class authorization.
+
+</td>
+<td width="50%" valign="top">
+
+### 🧭 [agentic-standards-cross-walk](https://github.com/Mayur021/agentic-standards-cross-walk)
+
+![Research](https://img.shields.io/badge/-Research-6366f1?style=flat-square)
+![CC BY 4.0](https://img.shields.io/badge/-CC%20BY%204.0-green?style=flat-square)
+
+Research lens cross-walking agentic AI standards across CSA, NIST, OWASP and others, mapping where the same control is named differently and where a control exists in one body and nowhere else.
 
 </td>
 </tr>
@@ -113,6 +136,14 @@ Long-form essays on AI agent security, decision-rights, reversibility-graded aut
 ---
 
 ## 🏆 Responsible Disclosure Recognition
+
+[![CVE-2026-90572](https://img.shields.io/badge/CVE--2026--90572-Finder-b91c1c?style=flat-square)](https://www.cve.org/CVERecord?id=CVE-2026-90572)
+
+**[CVE-2026-90572](https://www.cve.org/CVERecord?id=CVE-2026-90572)** — memory corruption in `TSnap7MicroClient::opUpload`, snap7 1.4.0 to 1.4.3, the Siemens S7 client library vendored by a good deal of SCADA and HMI code. A length field the server declares, copied without checking it against what actually arrived. Credited as **finder** on the CVE record. Published 13 September 2026, CVSS v4.0 5.1, v3.1 4.7.
+
+[![GHSA-wcqx-x7x9-c8rm](https://img.shields.io/badge/GHSA--wcqx--x7x9--c8rm-Reporter-b45309?style=flat-square)](https://github.com/mz-automation/libiec61850/security/advisories/GHSA-wcqx-x7x9-c8rm)
+
+**[GHSA-wcqx-x7x9-c8rm](https://github.com/mz-automation/libiec61850/security/advisories/GHSA-wcqx-x7x9-c8rm)** — out-of-bounds read in the libiec61850 IEC 61850-9-2 Sampled Values subscriber, via a missing APDU-length check in `parseSVPayload()`. Unauthenticated and network-adjacent; crashes the SV receiver. Credited as **reporter**. Published 13 August 2026, CWE-125, CVSS 3.1 base 4.3. Fixed in v1.6.2 with the one-line length guard proposed in the report.
 
 ![Red Hat](https://img.shields.io/badge/Red%20Hat-Dec%202023-EE0000?style=flat-square&logo=redhat&logoColor=white)
 ![Adobe](https://img.shields.io/badge/Adobe%20PSIRT-Mar%202016-FF0000?style=flat-square&logo=adobe&logoColor=white)
