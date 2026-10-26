@@ -85,7 +85,7 @@ Reference implementation of **OWASP AISVS C9.2.3 / C9.2.4 / C9.2.10**: reversibi
 ![SPIFFE](https://img.shields.io/badge/-SPIFFE-grey?style=flat-square)
 ![CC BY 4.0](https://img.shields.io/badge/-CC%20BY%204.0-green?style=flat-square)
 
-NHI runtime decision-rights companion to **OWASP SPVS V1.3.7**. Identity provenance verification, token freshness, action-class authorization.
+NHI runtime decision-rights companion to a proposed SPVS requirement, **V1.3.7** in [PR #15](https://github.com/OWASP/www-project-spvs/pull/15) (open). Identity provenance verification, token freshness, action-class authorization.
 
 </td>
 <td width="50%" valign="top">
